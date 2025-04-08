@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Map</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="container">
+    <object id="map" data="map.svg" type="image/svg+xml"></object>
+    <div id="sidebar">
+      <h2>Largest Territories</h2>
+      <ul id="ranking"></ul>
+    </div>
+  </div>
+  <div id="modal" class="hidden">
+    <label>Name: <input id="name" /></label>
+    <label>Description: <input id="desc" /></label>
+    <label>Color: <input id="color" type="color" /></label>
+    <button id="save">Save</button>
+    <button id="delete">Delete</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
